@@ -1,0 +1,624 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #171717;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	width: 100%;
+}
+
+@media screen and (min-width: 1241px) {
+
+	#conteiner-nav {
+		max-width: 1700px;
+		margin: 0 auto;
+	}
+
+	#hero {
+		background-image: url("images/team.jpg");
+		padding: 210px 0;
+		max-width: 1700px;
+		margin: 0 auto;
+	}
+	
+	#conteiner-promotions {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+	
+	#conteiner-text {
+		padding: 30px;
+	}
+	
+	#conteiner-text .wrapper {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+	
+	#container-treneri .wrapper {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+	
+	#treneri {
+		max-width: 1230px;
+		margin: 0 auto;
+	}
+	
+	#team img {
+		width: 1235px;
+	}
+	
+	#conteiner-school .wrapper {
+		padding: 35px 400px;
+		max-width: 1550px;
+		margin: 0 auto;
+		font-size: 19px;
+	}
+	
+	#conteiner-school .wrapper {
+		font-size: 24px;
+	}
+	
+	#conteiner-school .wrapper img {
+		width: 350px;
+		height: 350px;
+	}
+	
+	#contact input[type="text"] {
+		padding: 10px 12px;
+		width: 500px;
+		height: 20px;
+		background: #171717;
+		border: 2px solid #D41717;
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	#contact textarea {
+		width: 500px;
+		height: 300px;
+	}
+	
+	#footer .wrapper {
+		max-width: 1700px;
+		margin: 0 auto;
+	}
+
+	#footer img, #footer p {
+		margin: 0 40px;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+	
+	#hero {
+		background-image: url("images/team-mid.jpg");
+		padding: 190px 0;
+	}
+	
+	#conteiner-text {
+		padding: 30px;
+	}
+	
+	#team img {
+		width: 100%;
+	}
+	
+	#conteiner-school .wrapper {
+		padding: 15px 30px;
+	}
+	
+	#conteiner-school .wrapper img {
+		width: 300px;
+		height: 300px;
+	}
+	
+	#contact input[type="text"]{
+		width: 450px;
+		height: 20px;
+	}
+	
+	#contact textarea {
+		width: 450px;
+		height: 350px;
+	}
+	
+	#footer .wrapper {
+		margin: 0 60px;
+	}
+	
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	
+	#hero {
+		background-image: url("images/team-small.jpg");
+		padding: 170px 0;
+	}
+	
+	#conteiner-text {
+		padding: 25px;
+	}
+	
+	#treneri {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#team img {
+		width: 100%;
+	}
+	
+	#conteiner-school .wrapper {
+		padding: 15px 30px;
+	}
+	
+	#conteiner-school .wrapper img {
+		width: 250px;
+		height: 250px;
+	}
+	
+	#contact input[type="text"]{
+		width: 350px;
+		height: 20px;
+	}
+	
+	#contact textarea {
+		width: 350px;
+		height: 250px;
+	}
+	
+	#footer .wrapper {
+		margin: 0 60px;
+	}
+	
+}
+@media screen and (max-width: 767px) {
+	
+	body {
+		background: #171717;
+	}
+	
+	.menu-toggle {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size:  30px;
+		color: #000;
+	}
+	.menu-toggle:before {
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+	.menu-toggle.active:before {
+		content: '\f00d';
+	}
+	nav {
+		display: none;
+	}
+	nav.active {
+		display: block;
+		width: 100%;
+	}
+	nav.active ul {
+		display: block;
+	}
+	nav.active ul li a {
+		margin: 0;
+	}
+	
+	#hero {
+		background-image: url("images/team-mob.jpg");
+		padding: 150px 0;
+	}
+	
+	#conteiner-promotions {
+		flex-direction: column;
+		max-width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+	#conteiner-promotions .promotion {
+		margin: 0px auto;
+		min-width: 80%;
+	}
+	#conteiner-promotions .promotion h1 {
+		font-size: 24px;
+	}
+	#conteiner-promotions .promotion p {
+		font-size: 20px;
+	}
+	
+	#conteiner-text {
+		padding: 0 15px;
+	}
+	
+	#treneri {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#sensej img {
+		width: 100%;
+	}
+
+	#treneri img {
+		width: 100%;
+	}
+
+	#team img {
+		width: 100%;
+	}
+
+	#conteiner-school .wrapper {
+		padding: 15px;
+	}
+	
+	#conteiner-school .wrapper img {
+		width: 50%;
+		height: 50%;
+	}
+	
+	#conteiner-school .wrapper p {
+		margin: 0 auto;
+	}
+	
+	#conteiner-school .wrapper ul {
+		margin: 0 auto;
+	}
+	
+	#contact {
+		text-align: center;
+		background: #171717;
+		padding: 20px;
+	}
+	
+	#contact input[type="text"]{
+		padding: 10px 12px;
+		width: 250px;
+		height: 20px;
+		background: #171717;
+		border: 2px solid #D41717;
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	#contact textarea {
+		padding: 10px 12px;
+		width: 250px;
+		height: 200px;
+		background: #171717;
+		border: 2px solid #D41717;
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	#contact input[type="button"]{
+		padding: 8px 10px;
+		background: #D41717;
+		text-decoration: none;
+		color: #FFF;
+		border: none;
+	}
+	
+	#contact input[type="button"]:hover{
+		background: #A70E0E;
+	}
+	
+	.mapWrapper {
+		position: relative;
+		padding-bottom: 66.6666667%;
+		height: 0;
+	}
+	
+	.mapWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#footer .wrapper {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#footer .wrapper img {
+		width: 100px;
+		height: 100px;
+	}
+	
+	#footer .wrapper p {
+		font-size: 25px;
+	}
+	
+}
+/* kraj media upita */
+
+a.bttn:link,
+.bttn:visited {
+	padding: 8px 10px;
+	background: #D41717; 
+	text-decoration: none;
+	color: #FFF;
+}
+a.bttn:hover {
+	background: #A21212;
+}
+a.bttn:active {
+	background: #6F0A0A;
+}
+
+h1 { font-size: 38px; }
+h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+header {
+	position: relative;
+	padding: 10px;
+	background: #D41717;
+	box-sizing: border-box;
+}
+
+.logo img {
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* nav */
+nav {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+	background: #9A0F0F;
+	color: #fff;
+	transition: 0.5s;
+}
+
+/* nav/kraj */
+
+/* pocetna */
+
+#hero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main {
+	background: #171717;
+}
+
+#conteiner-promotions {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 0;
+	background: #171717;
+	width: 100%;
+}
+#conteiner-promotions p {
+	padding: 10px;
+}
+#conteiner-promotions .promotion {
+	flex-basis: 30%;
+}
+#conteiner-promotions h2, p {
+	text-align: center;
+}
+#conteiner-promotions p {
+	font-size: 18px;
+}
+
+#conteiner-text {
+	background: #171717;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+
+#conteiner-text p {
+	font-weight: 500;
+	padding: 10px 40px;
+}
+
+/* pocetna/kraj */
+
+/* treneri */
+#container-treneri {
+	padding: 10px;
+	background: #171717;
+	text-align: center;
+}
+#container-treneri h1 , p{
+	text-align: center;
+}
+
+#sensej {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#sensej p {
+	margin: 0 auto;
+	font-size: 17px;
+}
+
+#treneri {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+/* treneri/kraj */
+
+/* skolakarate */
+
+#conteiner-school {
+	background: #171717;
+}
+
+#conteiner-school .wrapper {
+	color: #fff;
+	text-align: center;
+}
+
+#conteiner-school .wrapper p {
+	text-align: center;
+}
+
+#conteiner-school .wrapper ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+/* skolakarate/kraj */
+
+/* kontakt */
+
+#social {
+	display: flex;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#social ul {
+	padding: 0;
+	margin: 0 auto;
+	display: flex;
+}
+
+#social ul li {
+	list-style: none;
+	font-size: 40px;
+	display: block;
+	margin: 0 15px;
+}
+
+#social ul li .fa {
+	color: #fff;
+}
+
+#social ul li .fa:link,
+#social ul li .fa:visited {
+	color: #fff;
+}
+
+#social ul li .fa:hover {
+	color: rgb(150, 19, 19);
+}
+
+#social ul li .fa:active {
+	color: #7a0d0d;
+}
+
+#contact {
+	text-align: center;
+	background: #171717;
+	padding: 10px;
+}
+
+#contact input[type="text"]{
+	padding: 10px 12px;
+	background: #171717;
+	border: 2px solid #D41717;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#contact textarea {
+	padding: 10px 12px;
+	background: #171717;
+	border: 2px solid #D41717;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#contact input[type="button"]{
+	padding: 8px 10px;
+	background: #D41717;
+	text-decoration: none;
+	color: #FFF;
+	border: none;
+}
+#contact input[type="button"]:hover{
+	background: #A70E0E;
+}
+
+/* kontakt/kraj */
+
+/* footer */
+
+#footer {
+    background: #D41717;
+	color: #FFF;
+    font-size: 14px;
+	padding: 5px 0;
+}
+#footer .wrapper {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#footer .wrapper p {
+	margin-top: 22px;
+}
+
+#footer a:link,
+#footer a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #686868;
+}
+#footer a:active {
+	color: #373737;
+}
+
+#footer img {
+	width: 60px;
+	height: 60px;
+}
+
+/* footer/kraj */

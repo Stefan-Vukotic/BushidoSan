@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bushido-San</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<meta content="index.html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="conteiner-nav">
+		<a href="index.html" class="logo"><img src="images/logo.png" alt="Logo Bushido-San"></a>
+		<div class="menu-toggle"></div>
+		<nav>	
+			<ul>
+				<li><a href="index.html">POČETNA</a></li>
+				<li><a href="treneri.html">TRENERI</a></li>
+				<li><a href="skola.html">ŠKOLA KARATEA</a></li>
+				<li><a href="kontakt.html" class="active">KONTAKT</a></li>
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+		</div>
+	</header><!-- end header -->
+	
+	<div id="contact">
+		<h2>Adresa</h2>
+		<p>Adresa: Aleksandra Dubčeka 20, Beograd 11000</p>
+		<p>Telefon: +381693142101</p>
+		<div id="social">
+		<ul>
+			<li><a href="https://www.facebook.com/bushido.san.nbg/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+			<li><a href="https://www.instagram.com/_bushido_san_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		</div>
+		
+		<br>
+		
+		<form id="ime" action="" method="post">
+				<label for="ime">Ime:</label><br>
+				<input type="text" name="ime-input" id="ime-input" placeholder="Ime">
+		</form>
+		
+		<br>
+		
+		<form id="prezime" action="" method="post">
+				<label for="ime">Prezime:</label><br>
+				<input type="text" name="prezime-input" id="prezime-input" placeholder="Prezime">
+		</form>
+		
+		<br>
+		
+		<label for="poruka">Poruka:</label><br>
+		<textarea cols="50" rows="10" name="poruka" id="poruka"></textarea>
+		
+		<br>
+		<br>
+		
+		<form>
+			<input type="button" value="Pošalji">
+		</form>
+		
+		<br>
+		<section class="map">
+		<h3>Lokacija:</h3>
+		<div class="mapWrapper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.3028978726193!2d20.406433914925707!3d44.83576448317677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65ab22434c5f%3A0x29338931a52855d4!2zS2FyYXRlIGtsdWIg4oCcQnVzaGlkbyBTQU7igJ0!5e0!3m2!1sbs!2srs!4v1592771770104!5m2!1sbs!2srs" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div><!-- end #mape -->
+		</section>
+	</div><!-- end #contact -->
+	
+	<div id="footer">
+		<div class="wrapper">
+			
+			<p>Copyright &copy; <a href="index.html">Bushido-San</a></p>
+			<a href="index.html"><img src="images/logo.png" alt="grb bushido-san"></a>
+			<a href="https://sites.google.com/site/srpskakarateunijasku/" target="_blank"><img src="images/sku.png" alt="grb sku"></a>
+			<a href="https://www.wukf-karate.org/" target="_blank"><img src="images/wukf.png" alt="grb wukf"></a>
+			<a href="https://www.wkc-org.net/" target="_blank"><img src="images/wkc.png" alt="grb wkc"></a>
+			
+		</div><!-- end .wrapper -->
+	</div><!-- end #footer -->
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+</body>
+</html>

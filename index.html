@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bushido-San</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<meta content="index.html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="conteiner-nav">
+		<a href="index.html" class="logo"><img src="images/logo.png" alt="Logo Bushido-San"></a>
+		<div class="menu-toggle"></div>
+		<nav>	
+			<ul>
+				<li><a href="index.html" class="active">POČETNA</a></li>
+				<li><a href="treneri.html">TRENERI</a></li>
+				<li><a href="skola.html">ŠKOLA KARATEA</a></li>
+				<li><a href="kontakt.html">KONTAKT</a></li>
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+		</div>
+	</header><!-- end header -->
+	
+	<div id="hero">
+		<div id="hero-photo"></div>
+	</div><!-- end #hero -->
+	
+	<div id="main">
+		<div id="conteiner-promotions">
+		<div class="promotion">
+			<h2>Zašto baš karate</h2>
+			<p>Karate je Japanska veština koja stimulise pravilan vizički i mentalni razvoj kod dece</p>
+			<p><a href="skola.html" class="bttn">Pročitaj više</a></p>
+		</div><!-- end .promotion -->
+		<div class="promotion">
+			<h2>Trenirajte sa najboljima</h2>
+			<p>Naši treneri su majstori karatea, reprezentativci i sudije i imaju više godišnje iskustvo u radu kako sa decom tako i sa odraslima</p>
+			<p><a href="treneri.html" class="bttn">Treneri</a></p>
+		</div><!-- end .promotion -->
+		<div class="promotion">
+			<h2>Kontakt</h2>
+			<p>Pogledajte gde se nalazimo i kontaktirate nas</p>
+			<p><a href="kontakt.html" class="bttn">Kontakt</a></p>
+		</div><!-- end .promotion -->
+		</div>
+	</div><!-- end #main -->
+	
+	<div id="conteiner-text">
+		<div class="wrapper">
+			<h2>Karate Klub Bushido-San</h2>
+			<p>Cilj nam je da motivišemo kako mlade tako i starije osobe kako treba da živi pravi sportista. Takodje da već iskusni karatisti usavrše svoje znanje. Zato sam osnovao Bushido-San. Zajedno sa svojim kolegama majstorom Markom Makićem (<i>trener, crni pojas 1. dan</i>) i majstorom Urošom Jovanovićem (<i>internacionalni sudija, trener, crni pojas 1. dan</i>) potrudiću se da opravdam Vaše poverenje.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, impedit necessitatibus porro, nihil eveniet fugit voluptatibus tenetur reiciendis iusto delectus vero veniam eos distinctio officia rerum ipsam ipsum nemo non, repellendus, itaque expedita beatae facilis! Voluptate dignissimos assumenda architecto dolor obcaecati cumque molestias nobis, vero in facilis qui mollitia, veritatis officiis, et magni necessitatibus laudantium eveniet reiciendis, at voluptates. Esse laudantium illo facilis atque soluta aut error rerum velit rem doloremque vitae neque, natus ad iure, consequuntur molestias! Repellat inventore dignissimos nesciunt nemo delectus odio voluptatem nam, neque eum rem vel hic autem minima deleniti quod minus sunt eveniet? Delectus.</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="wrapper">
+			
+			<p>Copyright &copy; <a href="index.html">Bushido-San</a></p>
+			<a href="index.html"><img src="images/logo.png" alt="grb bushido-san"></a>
+			<a href="https://sites.google.com/site/srpskakarateunijasku/" target="_blank"><img src="images/sku.png" alt="grb sku"></a>
+			<a href="https://www.wukf-karate.org/" target="_blank"><img src="images/wukf.png" alt="grb wukf"></a>
+			<a href="https://www.wkc-org.net/" target="_blank"><img src="images/wkc.png" alt="grb wkc"></a>
+			
+		</div><!-- end .wrapper -->
+	</div><!-- end #footer -->
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+</body>
+</html>
